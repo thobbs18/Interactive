@@ -1,0 +1,10 @@
+body {
+  background: grey;
+}
+
+.webring {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  background: white;
+}
