@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(to bottom, #33ccff 0%, #6666ff 100%);
+    max-width: 600px;
+    margin: auto;
+}
+
+#bodytext{
+  padding-top: 2em;
+  font-size: 18px;
+  text-align: left;
+}
+
+@keyframes slidein1 {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein2 {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+h1{
+  animation-duration: 2s;
+  animation-name: slidein1;
+  font-weight: bolder;
+  text-align: right;
+  font-size: 3em;
+  line-height: 1.0;
+  margin-top: 2em;
+  border-width: medium;
+  border-color: white;
+  border-right-style: solid;
+  border-bottom-style: double;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+h2{
+  animation-duration: 2s;
+  animation-name: slidein2;
+  animation-delay: 4s;
+  font-weight: bolder;
+  text-align: right;
+  font-size: 2em;
+  line-height: 1.0;
+  border-color: white;
+  border-top-style: double;
+  border-left-style: solid;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+
+b {
+  text-align: right;
+  font-size: 20px;
+}
+
+b:hover{
+  color:white;
+}
+
+#video{
+  margin-right: 5em;
+}
+
+a:hover{
+  color: white;
+}
