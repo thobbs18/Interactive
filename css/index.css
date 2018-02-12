@@ -1,5 +1,7 @@
-#grad {
-  background: linear-gradient(#47d147, #3399ff) ;
+body {
+    background: linear-gradient(to bottom, #47d147 0%, #3399ff 100%);
+    max-width: 600px;
+    font-color:black;
 }
 
 .webring {
@@ -9,10 +11,15 @@
   background: transparent;
 }
 
-a{
+a {
   text-decoration: none;
+  color:black;
 }
 
-a:hover{
+a:hover {
   background: white;
+}
+
+a:visited{
+  color: black;
 }
