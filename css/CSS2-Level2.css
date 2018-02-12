@@ -1,0 +1,86 @@
+.canvas1 {
+  width: 1000px;
+  height: 1000px;
+  background: black;
+  position: relative;
+}
+
+.object{
+  position: absolute;
+}
+
+@keyframes slidein1 {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes slidein2 {
+  from {
+    margin-right: 100%;
+  }
+
+  to {
+    margin-right: 0%;
+  }
+}
+
+#square1{
+height: 100px;
+width: 100px;
+left: 100px;
+top: 100px;
+background-color: green;
+animation-name: slidein1;
+animation-duration: 4s;
+animation-iteration-count: 1;
+}
+
+#square2{
+height: 100px;
+width: 100px;
+left: 400px;
+top: 240px;
+background-color: yellow;
+animation-name: slidein2;
+animation-duration: 6s;
+animation-iteration-count: 1;
+}
+
+#square3{
+height: 100px;
+width: 100px;
+right: 150px;
+top: 100px;
+background-color: red;
+animation-name: slidein2;
+animation-duration: 10s;
+animation-iteration-count: 1;
+}
+
+#square4{
+height: 100px;
+width: 100px;
+left: 150px;
+bottom: 100px;
+background-color: blue;
+animation: slidein;
+animation-name: slidein1;
+animation-duration: 8s;
+animation-iteration-count: 1;
+}
+
+#square5{
+height: 100px;
+width: 100px;
+right: 100px;
+bottom: 100px;
+background-color: white;
+animation-name: slidein2;
+animation-duration: 2s;
+animation-iteration-count: 1;
+}
