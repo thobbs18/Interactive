@@ -25,25 +25,116 @@
     <a-box color="#000000" width="20" height="20" position="0 10 0" rotation="90 0 0"></a-box>
 
     <!-- Floor -->
-    <a-plane rotation="-90 0 0" position="2 -1 -2" color="yellow" width="60" height="50" depth="2"></a-plane>
+    <a-plane rotation="-90 0 0" position="2 -1 -2" color="yellow" width="60" height="50" depth="2">
+    </a-plane>
 
-    <a-box position="-8 0 3" rotation="0 60 0"
-    width="2" depth="2" height="2" color="#ff1a1a"></a-box>
+    <a-box position="-8 0 3" rotation="0 60 0" width="2" depth="2" height="2" color="#ff1a1a">
+    <a-animation
+      attribute="position"
+      from="-8 0 3"
+      to="3 0 3"
+      dur="5000"
+      repeat="indefinite"
+      fill="both">
+    </a-animation>
+    <a-animation
+      attribute="rotation"
+      to="0 60 30"
+      dur="10000"
+      repeat="indefinite">
+    </a-animation>
+    </a-box>
 
     <a-box position="8 1 6" rotation="0 70 0"
-    width="2" depth="2" height="2" color="#ff1a1a"></a-box>
+    width="2" depth="2" height="2" color="#ff1a1a">
+    <a-animation
+      attribute="position"
+      from="8 1 6"
+      to="-8 4 3"
+      dur="5000"
+      repeat="indefinite"
+      fill="both">
+    </a-animation>
+    <a-animation
+      attribute="rotation"
+      to="60 30 30"
+      dur="10000"
+      repeat="indefinite">
+    </a-animation>
+    </a-box>
 
     <a-box position="6 5 -4" rotation="30 0 30"
-    width="2" depth="2" height="2" color="#ff1a1a"></a-box>
+    width="2" depth="2" height="2" color="#ff1a1a">
+    <a-animation
+      attribute="position"
+      from="6 5 -4"
+      to="3 2 -4"
+      dur="5000"
+      repeat="indefinite"
+      fill="both">
+    </a-animation>
+    <a-animation
+      attribute="rotation"
+      to="90 60 30"
+      dur="10000"
+      repeat="indefinite">
+    </a-animation>
+    </a-box>
 
     <a-box position="0 3 -1" rotation="60 0 30"
-    width="2" depth="2" height="2" color="#ff1a1a"></a-box>
+    width="2" depth="2" height="2" color="#ff1a1a">
+    <a-animation
+      attribute="position"
+      from="0 3 -1"
+      to="0 8 -1"
+      dur="5000"
+      repeat="indefinite"
+      fill="both">
+    </a-animation>
+    <a-animation
+      attribute="rotation"
+      to="0 30 90"
+      dur="10000"
+      repeat="indefinite">
+    </a-animation>
+    </a-box>
 
     <a-box position="3 2 8" rotation="0 60 0"
-    width="2" depth="2" height="2" color="#ff1a1a"></a-box>
+    width="2" depth="2" height="2" color="#ff1a1a">
+    <a-animation
+      attribute="position"
+      from="3 2 8"
+      to="3 4 8"
+      dur="5000"
+      repeat="indefinite"
+      fill="both">
+    </a-animation>
+    <a-animation
+      attribute="rotation"
+      to="0 0 30"
+      dur="10000"
+      repeat="indefinite">
+    </a-animation>
+    </a-box>
 
     <a-box position="6 0 8" rotation="0 70 0"
-    width="2" depth="2" height="2" color="#ff1a1a"></a-box>
+    width="2" depth="2" height="2" color="#ff1a1a">
+    <a-animation
+      attribute="position"
+      from="6 0 8"
+      to="3 3 3"
+      dur="5000"
+      repeat="indefinite"
+      fill="both">
+    </a-animation>
+    <a-animation
+      attribute="rotation"
+      to="60 60 0"
+      dur="10000"
+      repeat="indefinite">
+    </a-animation>
+    </a-box>
+
     </a-scene>
 </body>
 
