@@ -1,10 +1,18 @@
-body {
-  background: grey;
+#grad {
+  background: linear-gradient(#47d147, #3399ff) ;
 }
 
 .webring {
   position: fixed;
   top: 1em;
   right: 1em;
+  background: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
   background: white;
 }
