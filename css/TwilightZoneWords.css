@@ -1,0 +1,172 @@
+body {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.object{
+  position: absolute;
+  will-change: transform, opacity;
+}
+
+@keyframes slidedown {
+  from{
+    transform: translate(0,-150px);
+    opacity: 0;
+  }
+  to{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideup {
+  from{
+    transform: translate(0,150px);
+    opacity: 0;
+  }
+  to{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+
+#period1 {
+  height: 100px;
+  width: 100px;
+  left: 275px;
+  top: 260px;
+  background-color: white;
+}
+
+#period2 {
+  height: 100px;
+  width: 100px;
+  left: 425px;
+  top: 260px;
+  background-color: white;
+}
+
+#period3 {
+  height: 100px;
+  width: 100px;
+  left: 575px;
+  top: 260px;
+  background-color: white;
+}
+
+#period4 {
+  height: 100px;
+  width: 100px;
+  left: 725px;
+  top: 260px;
+  background-color: white;
+}
+
+#period5 {
+  height: 100px;
+  width: 100px;
+  left: 875px;
+  top: 260px;
+  background-color: white;
+}
+
+#period6 {
+  height: 100px;
+  width: 100px;
+  left: 275px;
+  top: 410px;
+  background-color: white;
+  animation: slidedown 3s;
+  animation-fill-mode: forwards;
+}
+
+#period7 {
+  height: 100px;
+  width: 100px;
+  left: 425px;
+  top: 410px;
+  background-color: white;
+  animation: slidedown 3s;
+  animation-fill-mode: forwards;
+}
+
+#period8 {
+  height: 100px;
+  width: 100px;
+  left: 575px;
+  top: 410px;
+  background-color: white;
+  animation: slidedown 3s;
+  animation-fill-mode: forwards;
+}
+
+#period9 {
+  height: 100px;
+  width: 100px;
+  left: 725px;
+  top: 410px;
+  background-color: white;
+  animation: slidedown 3s;
+  animation-fill-mode: forwards;
+}
+
+#period10 {
+  height: 100px;
+  width: 100px;
+  left: 875px;
+  top: 410px;
+  background-color: white;
+  animation: slidedown 3s;
+  animation-fill-mode: forwards;
+}
+
+#period11 {
+  height: 100px;
+  width: 100px;
+  left: 275px;
+  top: 110px;
+  background-color: white;
+  animation: slideup 3s;
+  animation-fill-mode: forwards;
+}
+
+#period12 {
+  height: 100px;
+  width: 100px;
+  left: 425px;
+  top: 110px;
+  background-color: white;
+  animation: slideup 3s;
+  animation-fill-mode: forwards;
+}
+
+#period13 {
+  height: 100px;
+  width: 100px;
+  left: 575px;
+  top: 110px;
+  background-color: white;
+  animation: slideup 3s;
+  animation-fill-mode: forwards;
+}
+
+#period14 {
+  height: 100px;
+  width: 100px;
+  left: 725px;
+  top: 110px;
+  background-color: white;
+  animation: slideup 3s;
+  animation-fill-mode: forwards;
+}
+
+#period15 {
+  height: 100px;
+  width: 100px;
+  left: 875px;
+  top: 110px;
+  background-color: white;
+  animation: slideup 3s;
+  animation-fill-mode: forwards;
+}

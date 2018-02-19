@@ -1,0 +1,27 @@
+body {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.object{
+  position: absolute;
+  will-change: transform, opacity;
+}
+
+@keyframes shiftDown {
+  0%   {
+    transform: translate(0,0);}
+  100% {
+    transform: translate(500px,0);}
+}
+
+#square {
+  height: 50px;
+  width: 50px;
+  left: 292px;
+  top: 277px;
+  background-color: white;
+  animation: shiftDown 2s;
+  animation-fill-mode: forwards;
+}
