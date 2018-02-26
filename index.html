@@ -18,14 +18,14 @@
       <li><a href="Assignments/TextLandscape.html">Text Landscape</a></li>
       <li><a href="Assignments/CSS2-Level1.html">Room</a></li>
       <li><a href="Assignments/TwilightZoneHome.html">Twilight Zone</a></li>
-      <li>???</li>
+      <li><a hre="Assignments/slotmachine.html">CAH Slot Machine</a></li>
     </ul>
     <h2>Reading responses</h2>
     <ul>
       <li><a href="Assignments/reading-response-a.html">Reading response A</a></li>
       <li><a href="Assignments/reading-response-b.html">Reading response B</a></li>
       <li><a href="Assignments/reading-response-c.html">Reading response C</a></li>
-      <li>Reading response D</li>
+      <li><a href="Assignments/reading-response-d.html">Reading response D</a></li>
       <li>Reading response E</li>
     </ul>
     <h2>Projects</h2>
@@ -59,6 +59,23 @@
     </td>
     </tr>
   </table>
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+
+  $(document).read(function(){
+
+  $('#button').click(function(){
+    var red = math.floor(math.random() * 255);
+    var green = math.floor(math.random() * 255);
+    var blue = math.floor(math.random() * 255);
+    var rgb = "rgb(" + red + "," + green + "," + blue + ")";
+    $("body").css("background-color", rgb)
+  })
+  });
+
+</script>
+
 </body>
 
 </html>
