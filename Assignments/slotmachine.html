@@ -3,93 +3,93 @@
 
 <head>
 
-  <link rel="stylesheet" href="../css/slot-machine.css" />
+  <link rel="stylesheet" href="../css/slotmachine.css"/>
 
 </head>
 
 <body>
 
-  <div id="column-one"></div>
-  <div id="column-two"></div>
-  <div id="column-three"></div>
+  <button>Randomize</button>
 
-  <button>Again</button>
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
-  <script src="../js/jquery.min.js"></script>
+  <div id="row1"></div>
+  <div id="row2"></div>
+  <div id="row3"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
 
   $(document).ready(function(){
 
+  question = new Array();
+  question[0] = "<img src='../Images/CAH/Q1.jpg'/>"
+  question[1] = "<img src='../Images/CAH/Q2.jpg'/>"
+  question[2] = "<img src='../Images/CAH/Q3.jpg'/>"
+  question[3] = "<img src='../Images/CAH/Q4.jpg'/>"
+  question[4] = "<img src='../Images/CAH/Q5.jpg'/>"
+  question[5] = "<img src='../Images/CAH/Q6.jpg'/>"
+  question[6] = "<img src='../Images/CAH/Q7.jpg'/>"
+  question[7] = "<img src='../Images/CAH/Q8.jpg'/>"
+  question[8] = "<img src='../Images/CAH/Q9.jpg'/>"
+  question[9] = "<img src='../Images/CAH/Q10.jpg'/>"
+  question[10] = "<img src='../Images/CAH/Q11.jpg'/>"
+  question[11] = "<img src='../Images/CAH/Q12.jpg'/>"
+  question[12] = "<img src='../Images/CAH/Q13.jpg'/>"
+  question[13] = "<img src='../Images/CAH/Q14.jpg'/>"
+  question[14] = "<img src='../Images/CAH/Q15.jpg'/>"
+  question[15] = "<img src='../Images/CAH/Q16.jpg'/>"
+  question[16] = "<img src='../Images/CAH/Q17.jpg'/>"
+  question[17] = "<img src='../Images/CAH/Q18.jpg'/>"
+  question[18] = "<img src='../Images/CAH/Q19.jpg'/>"
+  question[19] = "<img src='../Images/CAH/Q20.jpg'/>"
 
-question = new Array();
-question[0] = "<img src='../Images/CAH/Q1.jpg' width='300'/>"
-question[1] = "<img src='../Images/CAH/Q2.jpg' width='300'/>"
-question[2] = "<img src='../Images/CAH/Q3.jpg' width='300'/>"
-question[3] = "<img src='../Images/CAH/Q4.jpg' width='300'/>"
-question[4] = "<img src='../Images/CAH/Q5.jpg' width='300'/>"
-question[5] = "<img src='../Images/CAH/Q6.jpg' width='300'/>"
-question[6] = "<img src='../Images/CAH/Q7.jpg' width='300'/>"
-question[7] = "<img src='../Images/CAH/Q8.jpg' width='300'/>"
-question[8] = "<img src='../Images/CAH/Q9.jpg' width='300'/>"
-question[9] = "<img src='../Images/CAH/Q10.jpg' width='300'/>"
-question[10] = "<img src='../Images/CAH/Q11.jpg' width='300'/>"
-question[11] = "<img src='../Images/CAH/Q12.jpg' width='300'/>"
-question[12] = "<img src='../Images/CAH/Q13.jpg' width='300'/>"
-question[13] = "<img src='../Images/CAH/Q14.jpg' width='300'/>"
-question[14] = "<img src='../Images/CAH/Q15.jpg' width='300'/>"
-question[15] = "<img src='../Images/CAH/Q16.jpg' width='300'/>"
-question[16] = "<img src='../Images/CAH/Q17.jpg' width='300'/>"
-question[17] = "<img src='../Images/CAH/Q18.jpg' width='300'/>"
-question[18] = "<img src='../Images/CAH/Q19.jpg' width='300'/>"
-question[19] = "<img src='../Images/CAH/Q20.jpg' width='300'/>"
-
-answer = new Array();
-answer[0] = "<img src='../Images/CAH/Card-1.jpg' width='300'left='500'/>"
-answer[1] = "<img src='../Images/CAH/Card-2.jpg' width='300'left='500'/>"
-answer[2] = "<img src='../Images/CAH/Card-3.jpg' width='300'left='500'/>"
-answer[3] = "<img src='../Images/CAH/Card-4.jpg' width='300'left='500'/>"
-answer[4] = "<img src='../Images/CAH/Card-5.jpg' width='300'left='500'/>"
-answer[5] = "<img src='../Images/CAH/Card-6.jpg' width='300'left='500'/>"
-answer[6] = "<img src='../Images/CAH/Card-7.jpg' width='300'left='500'/>"
-answer[7] = "<img src='../Images/CAH/Card-8.jpg' width='300'left='500'/>"
-answer[8] = "<img src='../Images/CAH/Card-9.jpg' width='300'left='500'/>"
-answer[9] = "<img src='../Images/CAH/Card-10.jpg' width='300'left='500'/>"
-answer[10] = "<img src='../Images/CAH/Card-11.jpg' width='300'left='500'/>"
-answer[11] = "<img src='../Images/CAH/Card-12.jpg' width='300'left='500'/>"
-answer[12] = "<img src='../Images/CAH/Card-13.jpg' width='300'left='500'/>"
-answer[13] = "<img src='../Images/CAH/Card-14.jpg' width='300'left='500'/>"
-answer[14] = "<img src='../Images/CAH/Card-15.jpg' width='300'left='500'/>"
-answer[15] = "<img src='../Images/CAH/Card-16.jpg' width='300'left='500'/>"
-answer[16] = "<img src='../Images/CAH/Card-17.jpg' width='300'left='500'/>"
-answer[17] = "<img src='../Images/CAH/Card-18.jpg' width='300'left='500'/>"
-answer[18] = "<img src='../Images/CAH/Card-19.jpg' width='300'left='500'/>"
-answer[19] = "<img src='../Images/CAH/Card-20.jpg' width='300'left='500'/>"
-answer[20] = "<img src='../Images/CAH/Card-21.jpg' width='300'left='500'/>"
-answer[21] = "<img src='../Images/CAH/Card-22.jpg' width='300'left='500'/>"
-answer[22] = "<img src='../Images/CAH/Card-23.jpg' width='300'left='500'/>"
-answer[23] = "<img src='../Images/CAH/Card-24.jpg' width='300'left='500'/>"
-answer[24] = "<img src='../Images/CAH/Card-25.jpg' width='300'left='500'/>"
-answer[25] = "<img src='../Images/CAH/Card-26.jpg' width='300'left='500'/>"
-answer[26] = "<img src='../Images/CAH/Card-27.jpg' width='300'left='500'/>"
-answer[27] = "<img src='../Images/CAH/Card-28.jpg' width='300'left='500'/>"
-answer[28] = "<img src='../Images/CAH/Card-29.jpg' width='300'left='500'/>"
-answer[29] = "<img src='../Images/CAH/Card-30.jpg' width='300'left='500'/>"
+  answer = new Array();
+  answer[0] = "<img src='../Images/CAH/Card-1.jpg'/>"
+  answer[1] = "<img src='../Images/CAH/Card-2.jpg'/>"
+  answer[2] = "<img src='../Images/CAH/Card-3.jpg'/>"
+  answer[3] = "<img src='../Images/CAH/Card-4.jpg'/>"
+  answer[4] = "<img src='../Images/CAH/Card-5.jpg'/>"
+  answer[5] = "<img src='../Images/CAH/Card-6.jpg'/>"
+  answer[6] = "<img src='../Images/CAH/Card-7.jpg'/>"
+  answer[7] = "<img src='../Images/CAH/Card-8.jpg'/>"
+  answer[8] = "<img src='../Images/CAH/Card-9.jpg'/>"
+  answer[9] = "<img src='../Images/CAH/Card-10.jpg'/>"
+  answer[10] = "<img src='../Images/CAH/Card-11.jpg'/>"
+  answer[11] = "<img src='../Images/CAH/Card-12.jpg'/>"
+  answer[12] = "<img src='../Images/CAH/Card-13.jpg'/>"
+  answer[13] = "<img src='../Images/CAH/Card-14.jpg'/>"
+  answer[14] = "<img src='../Images/CAH/Card-15.jpg'/>"
+  answer[15] = "<img src='../Images/CAH/Card-16.jpg'/>"
+  answer[16] = "<img src='../Images/CAH/Card-17.jpg'/>"
+  answer[17] = "<img src='../Images/CAH/Card-18.jpg'/>"
+  answer[18] = "<img src='../Images/CAH/Card-19.jpg'/>"
+  answer[19] = "<img src='../Images/CAH/Card-20.jpg'/>"
+  answer[20] = "<img src='../Images/CAH/Card-21.jpg'/>"
+  answer[21] = "<img src='../Images/CAH/Card-22.jpg'/>"
+  answer[22] = "<img src='../Images/CAH/Card-23.jpg'/>"
+  answer[23] = "<img src='../Images/CAH/Card-24.jpg'/>"
+  answer[24] = "<img src='../Images/CAH/Card-25.jpg'/>"
+  answer[25] = "<img src='../Images/CAH/Card-26.jpg'/>"
+  answer[26] = "<img src='../Images/CAH/Card-27.jpg'/>"
+  answer[27] = "<img src='../Images/CAH/Card-28.jpg'/>"
+  answer[28] = "<img src='../Images/CAH/Card-29.jpg'/>"
+  answer[29] = "<img src='../Images/CAH/Card-30.jpg'/>"
 
     // Define function to generate the random colors
-    function generateRandomQuestion(){
-      num1 = Math.floor(Math.random() * question.length);
-      num2 = Math.floor(Math.random() * answer.length);
-      num3= Math.floor(Math.random() * num2);
-      document.write(question[num1]);
-      document.write(answer[num2]);
-      document.write(answer[num3]);
+    function generateRandom(){
+      var num1 = Math.floor(Math.random() * question.length);
+      var num2 = Math.floor(Math.random() * answer.length);
+      var num3= Math.floor(Math.random() * answer.length);
+
+      $("#row1").css("background-image", "url(../images/" + question[num1] + ")");
+      $("#row2").css("background-image", "url(../images/" + answer[num2] + ")");
+      $("#row3").css("background-image", "url(../images/" + answer[num3] + ")");
     }
 
-    generateRandomQuestion();
+      $('#button').click(function(){
+      generateRandom();
 
-    $('button').click(function(){
-      generateRandomQuestion();
 
+    }
     });
 
   });

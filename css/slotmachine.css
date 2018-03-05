@@ -1,28 +1,36 @@
-#column-one {
-  /* background: yellow; */
+#button {
   position: fixed;
-  top: 100;
-  left: 100;
-  width: 100%;
+  margin: 0 auto;
+  border-color: #F5B041;
+  border-style: solid;
+  border-top-width: 25px;
+  border-left-width: 50px;
+  border-right-width: 50px;
+  border-bottom-width: 25px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-#column-two {
-  /* background: lime; */
+
+#row1{
   position: fixed;
+  left: 0%;
   top: 0;
-  left: 33.333%;
-  bottom: 0;
-  width: 33.333%;
 }
-#column-three {
-  /* background: blue; */
+
+#row2 {
   position: fixed;
+  left: 33%;
   top: 0;
+}
+
+#row3 {
+  position: fixed;
   right: 0;
-  bottom: 0;
-  width: 33.333%;
+  top: 0
 }
-button {
-  position: fixed;
-  bottom: 50px;
-  left: 50px;
+
+div{
+  display: block;
 }

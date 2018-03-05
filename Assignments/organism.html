@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Organism - Rocameleon</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/organism.css">
+  </head>
+
+  <body>
+
+    <div id="button"></div>
+    <div id="click"></div>
+
+    <div id="ground"></div>
+
+    <div id="rock1"></div>
+    <div id="rock2"></div>
+
+    <div id="body">
+        <div class="leg1"></div>
+        <div class="leg2"></div>
+        <div class="leg3"></div>
+        <div class="leg4"></div>
+    </div>
+
+    <div id="eye1"></div>
+    <div id="eye2"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+    $(document).ready(function(){
+
+    var status = 'on';
+
+    $('#button').click(function(){
+      console.log('button clicked');
+      if(status == 'on'){
+        $('body').addClass('night');
+        status = 'off';
+      }
+      else {
+        $('body').removeClass('night');
+        status = 'on';
+      }
+
+    });
+
+    var status = 'down'
+
+    $('#click').click(function(){
+      if(status == 'down'){
+        $('body').addClass('up');
+        status = 'up';
+      }
+      else {
+        $('body').removeClass('up');
+        status = 'down';
+      }
+
+    });
+  });
+    </script>
+
+  </body>
+</html>
