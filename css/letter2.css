@@ -1,1 +1,134 @@
+body {
+  background-color: blue;
+}
 
+.circle1 {
+  position: fixed;
+  height:45px;
+  width:90px;
+  border-radius: 90px 90px 0 0;
+  background-color:green;
+  top: 10%;
+  left: 10%;
+  transform: rotate(20deg);
+}
+
+.circle2 {
+  position: fixed;
+  height:45px;
+  width:90px;
+  border-radius: 0 0 90px 90px;
+  background-color:green;
+  top: 19%;
+  left: 8%;
+  transform: rotate(20deg);
+}
+
+.circle3 {
+  position: fixed;
+  height:100px;
+  width:100px;
+  border-radius: 45px;
+  background:green;
+  top: 10%;
+  left: 20%;
+}
+
+.line1 {
+  position: fixed;
+  height: 3%;
+  width: 5%;
+  background: green;
+  top: 20%;
+  left: 25%;
+  transform: rotate(20deg);
+}
+
+.circle4 {
+  position: fixed;
+  height:50px;
+  width:100px;
+  border-radius: 0 0 90px 90px;
+  background-color:green;
+  top: 18%;
+  left: 33%;
+}
+
+.line2 {
+  position: fixed;
+  height: 3%;
+  width: 5%;
+  background: green;
+  top: 15%;
+  left: 32.5%;
+  transform: rotate(90deg);
+}
+
+.line3 {
+  position: fixed;
+  height: 3%;
+  width: 5%;
+  background: green;
+  top: 15%;
+  left: 37%;
+  transform: rotate(90deg);
+}
+
+.triangle2 {
+  position: fixed;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid green;
+  top: 10%;
+  left: 45%;
+}
+
+.circle6 {
+  position: fixed;
+  height:90px;
+  width:45px;
+  border-radius: 0 90px 90px 0;
+  background:green;
+  top: 10%;
+  left: 57%;
+}
+
+.line6 {
+  position: fixed;
+  height: 3%;
+  width: 5%;
+  background: green;
+  top: 18%;
+  left: 58%;
+  transform: rotate(45deg);
+}
+
+.circle7 {
+  position: fixed;
+  height:90px;
+  width:45px;
+  border-radius: 90px 0 0 90px;
+  background:green;
+  top: 10%;
+  left: 66%;
+}
+
+.line8 {
+  position: fixed;
+  height: 3%;
+  width: 5%;
+  background: green;
+  top: 12%;
+  left: 68%;
+}
+
+.line9 {
+  position: fixed;
+  height: 3%;
+  width: 5%;
+  background: green;
+  top: 19%;
+  left: 68%;
+}
