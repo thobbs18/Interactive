@@ -1,5 +1,27 @@
+h1 {
+  
+}
+
 body {
   background-color: white;
+}
+
+:root {
+    --main-bg-color: black;
+}
+
+.letter-definition {
+	display: none;
+}
+
+.word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.space {
+	width: 112px;
+	height: 220px;
 }
 
 .letter {
@@ -17,7 +39,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: grey;
+  background: var(--main-bg-color);
 }
 
 body.off .letterbox {
@@ -39,7 +61,7 @@ body.off .letterbox {
 }
 
 body.off .a .left-diagonal {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .a .left-diagonal {
@@ -52,7 +74,7 @@ body.off .a .left-diagonal {
 }
 
 body.off .a .left-diagonal {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .a .right-diagonal {
@@ -65,7 +87,7 @@ body.off .a .left-diagonal {
 }
 
 body.off .a .right-diagonal {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .a .horizontal-one , .h .rectangle-middle {
@@ -76,7 +98,7 @@ body.off .a .right-diagonal {
 }
 
 body.off .a .horizontal-one , body.off .h .rectangle-middle {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .a .triangle {
@@ -89,7 +111,7 @@ body.off .a .horizontal-one , body.off .h .rectangle-middle {
 }
 
 body.off .a .triangle {
-  border-bottom: 100px solid grey;
+  border-bottom: 100px solid var(--main-bg-color);;
 }
 
 .b .halfcircle-one {
@@ -104,7 +126,7 @@ body.off .a .triangle {
 }
 
 body.off .b .halfcircle-one {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .b .halfcircle-two {
@@ -119,7 +141,7 @@ body.off .b .halfcircle-one {
 }
 
 body.off .b .halfcircle-two {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .c .halfcircle , .g .halfcircle {
@@ -134,7 +156,7 @@ body.off .b .halfcircle-two {
 }
 
 body.off .c .halfcircle , body.off .g .halfcircle {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .c .halfcircle2 , .g .halfcircle2 {
@@ -142,7 +164,7 @@ body.off .c .halfcircle , body.off .g .halfcircle {
   height: 60%;
   width: 60%;
   border-radius: 50% 50% 0 0;
-  background: grey;
+  background: var(--main-bg-color);;
   transform: rotate(-90deg);
   margin-left: 15%;
   margin-bottom: 0;
@@ -165,7 +187,7 @@ body.off .c .halfcircle2 , body.off .g .halfcircle2 {
 }
 
 body.off .d .halfcircle {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .e .rectangle-top , .f .rectangle-top , .i .rectangle-top {
@@ -177,7 +199,7 @@ body.off .d .halfcircle {
 }
 
 body.off .e .rectangle-top , body.off .f .rectangle-top , body.off .i .rectangle-top {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .e .rectangle-middle , .f .rectangle-middle {
@@ -189,7 +211,7 @@ body.off .e .rectangle-top , body.off .f .rectangle-top , body.off .i .rectangle
 }
 
 body.off .e .rectangle-middle , body.off .f .rectangle-middle {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .e .rectangle-bottom , .i .rectangle-bottom {
@@ -201,7 +223,7 @@ body.off .e .rectangle-middle , body.off .f .rectangle-middle {
 }
 
 body.off .e .rectangle-bottom , body.off .i .rectangle-bottom {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .e .rectangle-back , .f .rectangle-back {
@@ -214,7 +236,7 @@ body.off .e .rectangle-bottom , body.off .i .rectangle-bottom {
 }
 
 body.off .e .rectangle-back , body.off .f .rectangle-back {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .g .rectangle {
@@ -223,12 +245,12 @@ body.off .e .rectangle-back , body.off .f .rectangle-back {
   height: 60%;
   background: white;
   bottom: -5%;
-  left: 64%;
+  left: 65%;
   z-index: 3;
 }
 
 body.off .g .rectangle {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .h .rectangle-left {
@@ -242,7 +264,7 @@ body.off .g .rectangle {
 }
 
 body.off .h .rectangle-left {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .h .rectangle-right {
@@ -256,7 +278,7 @@ body.off .h .rectangle-left {
 }
 
 body.off .h .rectangle-right {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .i .rectangle-long {
@@ -270,33 +292,33 @@ body.off .h .rectangle-right {
 }
 
 body.off .i .rectangle-long {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .j .halfcircle {
   position: absolute;
-  height: 82%;
-  width: 110%;
+  height: 54%;
+  width: 86.75%;
   border-radius: 50% 50% 0 0;
   background: white;
-  transform: rotate(90deg);
-  margin-left: 0%;
-  margin-bottom: 0;
+  transform: rotate(180deg);
+  left: 7%;
+  bottom: -4%;
 }
 
 body.off .j .halfcircle {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .j .halfcircle2 {
   position: absolute;
-  height: 60%;
-  width: 60%;
+  height: 35%;
+  width: 41%;
   border-radius: 50% 50% 0 0;
-  background: grey;
-  transform: rotate(90deg);
-  margin-left: -12%;
-  margin-bottom: 0;
+  background: var(--main-bg-color);;
+  transform: rotate(180deg);
+  left: 30%;
+  bottom: 18%;
   z-index: 2;
 }
 
@@ -304,18 +326,32 @@ body.off .j .halfcircle2 {
   background: white;
 }
 
-.j .rectangle {
+.j .rectangle1 {
   position: absolute;
-  width: 25%;
+  width: 23.5%;
   height: 60%;
   background: white;
-  bottom: -5%;
-  left: 9%;
+  bottom: 25%;
+  left: 70.5%;
   z-index: 3;
 }
 
-body.off .j .rectangle {
-  background: grey;
+body.off .j .rectangle1 {
+  background: var(--main-bg-color);;
+}
+
+.j .rectangle2 {
+  position: absolute;
+  width: 86%;
+  height: 25%;
+  background: white;
+  bottom: 75%;
+  left: 8%;
+  z-index: 3;
+}
+
+body.off .j .rectangle2 {
+  background: var(--main-bg-color);;
 }
 
 .k .rectangle-long , .p .rectangle {
@@ -329,7 +365,7 @@ body.off .j .rectangle {
 }
 
 body.off .k .rectangle-long , body.off .p .rectangle {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .k .diagonal-top {
@@ -343,7 +379,7 @@ body.off .k .rectangle-long , body.off .p .rectangle {
 }
 
 body.off .k .diagonal-top {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .k .diagonal-bottom {
@@ -357,7 +393,7 @@ body.off .k .diagonal-top {
 }
 
 body.off .k .diagonal-bottom {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .l .rectangle-long {
@@ -371,7 +407,7 @@ body.off .k .diagonal-bottom {
 }
 
 body.off .l .rectangle-long {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .l .rectangle-short {
@@ -383,10 +419,10 @@ body.off .l .rectangle-long {
 }
 
 body.off .l .rectangle-short {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
-.m .rectangle-long-left , .n .rectangle-long-left {
+.m .rectangle-long-left , .n .rectangle-long-left , .w .rectangle-long-left{
   position: absolute;
   width: 25%;
   height: 105%;
@@ -396,11 +432,11 @@ body.off .l .rectangle-short {
   z-index: 3;
 }
 
-body.off .m .rectangle-long-left , body.off .n .rectangle-long-left {
-  background: grey;
+body.off .m .rectangle-long-left , body.off .n .rectangle-long-left , body.off .w .rectangle-long-left{
+  background: var(--main-bg-color);;
 }
 
-.m .rectangle-long-right , .n .rectangle-long-right {
+.m .rectangle-long-right , .n .rectangle-long-right , .w .rectangle-long-right{
   position: absolute;
   width: 25%;
   height: 105%;
@@ -410,8 +446,8 @@ body.off .m .rectangle-long-left , body.off .n .rectangle-long-left {
   z-index: 3;
 }
 
-body.off .m .rectangle-long-right , body.off .n .rectangle-long-right {
-  background: grey;
+body.off .m .rectangle-long-right , body.off .n .rectangle-long-right , body.off .w .rectangle-long-right{
+  background: var(--main-bg-color);;
 }
 
 
@@ -426,7 +462,7 @@ body.off .m .rectangle-long-right , body.off .n .rectangle-long-right {
 }
 
 body.off .m .rectangle-short-left {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .m .rectangle-short-right {
@@ -436,11 +472,11 @@ body.off .m .rectangle-short-left {
   background: white;
   transform: rotate(-45deg);
   margin-left: 9%;
-  bottom: 56.5%;
+  bottom: 57.5%;
 }
 
 body.off .m .rectangle-short-right {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .n .diagonal {
@@ -454,7 +490,7 @@ body.off .m .rectangle-short-right {
 }
 
 body.off .n .diagonal {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .o .circle , .q .circle {
@@ -468,7 +504,7 @@ body.off .n .diagonal {
   }
 
 body.off .o .circle , body.off .q .circle {
-    background: grey;
+    background: var(--main-bg-color);;
     }
 
 .p .half-circle , .r .half-circle {
@@ -483,7 +519,7 @@ body.off .o .circle , body.off .q .circle {
 }
 
 body.off .p .half-circle , body.off .r .half-circle {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .p .rectangle-small {
@@ -496,7 +532,7 @@ body.off .p .half-circle , body.off .r .half-circle {
 }
 
 body.off .p .rectangle-small {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .q .rectangle {
@@ -510,7 +546,7 @@ body.off .p .rectangle-small {
 }
 
 body.off .q .rectangle {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .r .rectangle {
@@ -524,21 +560,21 @@ body.off .q .rectangle {
 }
 
 body.off .r .rectangle {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .r .rectangle2 {
   position: absolute;
   height: 25%;
-  width: 65%;
-  right: 3%;
-  bottom: 9%;
+  width: 70%;
+  right: -3%;
+  bottom: 6%;
   background: white;
   transform: rotate(45deg);
 }
 
 body.off .r .rectangle2 {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .s .rectangle-top {
@@ -551,7 +587,7 @@ body.off .r .rectangle2 {
 }
 
 body.off .s .rectangle-top {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .s .rectangle-diagonal {
@@ -565,7 +601,7 @@ body.off .s .rectangle-top {
     }
 
 body.off .s .rectangle-diagonal {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .s .rectangle-bottom {
@@ -578,7 +614,33 @@ body.off .s .rectangle-diagonal {
 }
 
 body.off .s .rectangle-bottom {
-  background: grey;
+  background: var(--main-bg-color);;
+}
+
+.s .rectangle-left{
+  position: absolute;
+  width: 25%;
+  height: 20%;
+  background: white;
+  bottom: 15%;
+  left: 8%;
+}
+
+body.off .s .rectangle-left{
+  background: var(--main-bg-color);;
+}
+
+.s .rectangle-right {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  background: white;
+  bottom: 60%;
+  left: 67%;
+}
+
+body.off .s .rectangle-right {
+  background: var(--main-bg-color);;
 }
 
 .t .rectangle-top , .z .rectangle-top {
@@ -591,7 +653,7 @@ body.off .s .rectangle-bottom {
 }
 
 body.off .t .rectangle-top , body.off .z .rectangle-top {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .t .rectangle-bottom {
@@ -604,7 +666,7 @@ body.off .t .rectangle-top , body.off .z .rectangle-top {
 }
 
 body.off .t .rectangle-bottom {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .u .half-circle1 {
@@ -619,17 +681,17 @@ body.off .t .rectangle-bottom {
 }
 
 body.off .u .half-circle1 {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .u .half-circle2 {
   position: absolute;
   height: 80%;
-  width: 32%;
+  width: 30%;
   border-radius: 50% 50% 0 0;
-  background: grey;
+  background: var(--main-bg-color);;
   transform: rotate(180deg);
-  left: 35%;
+  left: 36%;
   bottom: 20%;
   z-index: 2;
 }
@@ -644,12 +706,12 @@ body.off .u .half-circle2 {
   height: 112%;
   background: white;
   bottom: -4%;
-  left: 59%;
+  left: 61%;
   transform: rotate(25deg);
 }
 
 body.off .v .rectangle-left {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .v .rectangle-right {
@@ -663,7 +725,7 @@ body.off .v .rectangle-left {
 }
 
 body.off .v .rectangle-right {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .v .square{
@@ -677,7 +739,35 @@ body.off .v .rectangle-right {
 }
 
 body.off .v .square{
-  background: grey;
+  background: var(--main-bg-color);;
+}
+
+.w .rectangle-short-left {
+  position: absolute;
+  width: 31%;
+  height: 28%;
+  background: white;
+  transform: rotate(-45deg);
+  margin-left: -16%;
+  bottom: 2%;
+}
+
+body.off .w .rectangle-short-left {
+  background: var(--main-bg-color);;
+}
+
+.w .rectangle-short-right {
+  position: absolute;
+  width: 55%;
+  height: 28%;
+  background: white;
+  transform: rotate(45deg);
+  margin-left: 9%;
+  bottom: 10.5%;
+}
+
+body.off .w .rectangle-short-right {
+  background: var(--main-bg-color);;
 }
 
 .x .rectangle-left {
@@ -691,7 +781,7 @@ body.off .v .square{
 }
 
 body.off .x .rectangle-left {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .x .rectangle-right {
@@ -705,7 +795,7 @@ body.off .x .rectangle-left {
 }
 
 body.off .x .rectangle-right {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .y .rectangle-left {
@@ -719,7 +809,7 @@ body.off .x .rectangle-right {
 }
 
 body.off .y .rectangle-left {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .y .rectangle-right {
@@ -733,7 +823,7 @@ body.off .y .rectangle-left {
 }
 
 body.off .y .rectangle-right {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .y .rectangle {
@@ -742,11 +832,11 @@ body.off .y .rectangle-right {
   height: 65%;
   background: white;
   bottom: 0%;
-  left: 40%;
+  left: 39%;
 }
 
 body.off .y .rectangle {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 
@@ -762,7 +852,7 @@ body.off .y .rectangle {
 }
 
 body.off .z .diagonal {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .z .rectangle-bottom {
@@ -775,7 +865,7 @@ body.off .z .diagonal {
 }
 
 body.off .z .rectangle-bottom {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .zero .circle {
@@ -789,7 +879,7 @@ body.off .z .rectangle-bottom {
 }
 
 body.off .zero .circle {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .one .line {
@@ -798,12 +888,12 @@ body.off .zero .circle {
   height: 105%;
   background: white;
   bottom: -5%;
-  left: 36%;
+  left: 37%;
   z-index: 3;
 }
 
 body.off .one .line {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .two .circle1 , .three .circle1 , .question-mark .circle1 {
@@ -818,7 +908,7 @@ body.off .one .line {
 }
 
 body.off .two .circle1 , body.off .three .circle1 , body.off .question-mark .circle1 {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .two .circle2 , .three .circle2 , .question-mark .circle2{
@@ -826,7 +916,7 @@ body.off .two .circle1 , body.off .three .circle1 , body.off .question-mark .cir
   height: 54%;
   width: 25%;
   border-radius: 50% 50% 0 0;
-  background: grey;
+  background: var(--main-bg-color);;
   transform: rotate(90deg);
   left: 22%;
   bottom: 45%;
@@ -848,13 +938,13 @@ body.off .two .circle2 , body.off .three .circle2 , body.off .question-mark .cir
 }
 
 body.off .two .line1 {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .two .line2 {
   position: absolute;
   width: 80%;
-  height: 25%;
+  height: 23%;
   background: white;
   bottom: -1%;
   left: 9%;
@@ -862,7 +952,7 @@ body.off .two .line1 {
 }
 
 body.off .two .line2 {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .three .circle3 {
@@ -877,22 +967,36 @@ body.off .two .line2 {
 }
 
 body.off .three .circle3 {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .three .circle4 {
   position: absolute;
   height: 54%;
-  width: 25%;
+  width: 23%;
   border-radius: 50% 50% 0 0;
-  background: grey;
+  background: var(--main-bg-color);
   transform: rotate(90deg);
   left: 22%;
-  bottom: 0%;
+  bottom: 1%;
   z-index: 2;
 }
 
 body.off .three .circle4 {
+  background: white;
+}
+
+.three .rectangle {
+  position: absolute;
+  width: 20%;
+  height: 21%;
+  background: var(--main-bg-color);
+  bottom: 39%;
+  left: 9%;
+  z-index: 3;
+}
+
+body.off .three .rectangle {
   background: white;
 }
 
@@ -907,7 +1011,7 @@ body.off .three .circle4 {
 }
 
 body.off .four .rectangle-short-left {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .four .rectangle-long-right {
@@ -921,7 +1025,7 @@ body.off .four .rectangle-short-left {
 }
 
 body.off .four .rectangle-long-right {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .four .rectangle-middle {
@@ -935,7 +1039,7 @@ body.off .four .rectangle-long-right {
 }
 
 body.off .four .rectangle-middle {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .five .circle1{
@@ -950,7 +1054,7 @@ body.off .four .rectangle-middle {
 }
 
 body.off .five .circle1{
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .five .circle2 {
@@ -958,7 +1062,7 @@ body.off .five .circle1{
   height: 54%;
   width: 25%;
   border-radius: 50% 50% 0 0;
-  background: grey;
+  background: var(--main-bg-color);;
   transform: rotate(90deg);
   left: 22%;
   bottom: 0%;
@@ -980,7 +1084,7 @@ body.off .five .circle2 {
 }
 
 body.off .five .rectangle1 {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .five .rectangle2 {
@@ -994,7 +1098,7 @@ body.off .five .rectangle1 {
 }
 
 body.off .five .rectangle2 {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .six .rectangle {
@@ -1008,7 +1112,7 @@ body.off .five .rectangle2 {
 }
 
 body.off .six .rectangle {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .seven .rectangle-top {
@@ -1022,7 +1126,7 @@ body.off .six .rectangle {
 }
 
 body.off .seven .rectangle-top {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .seven .rectangle-diagonal , .nine .rectangle{
@@ -1036,7 +1140,7 @@ body.off .seven .rectangle-top {
 }
 
 body.off .seven .rectangle-diagonal , body.off .nine .rectangle{
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .eight .circle1 , .six .circle1{
@@ -1050,7 +1154,7 @@ body.off .seven .rectangle-diagonal , body.off .nine .rectangle{
 }
 
 body.off .eight .circle1 , body.off .six .circle1{
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 
@@ -1065,7 +1169,7 @@ body.off .eight .circle1 , body.off .six .circle1{
 }
 
 body.off .eight .circle3 , body.off .nine .circle1 {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .nine .rectangle{
@@ -1079,7 +1183,7 @@ body.off .eight .circle3 , body.off .nine .circle1 {
 }
 
 body.off .nine .rectangle{
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .question-mark .rectangle{
@@ -1093,7 +1197,7 @@ body.off .nine .rectangle{
 }
 
 body.off .question-mark .rectangle{
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .question-mark .dot {
@@ -1107,7 +1211,7 @@ body.off .question-mark .rectangle{
 }
 
 body.off .question-mark .dot {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .exclamation-mark .rectangle {
@@ -1116,12 +1220,12 @@ body.off .question-mark .dot {
   height: 80%;
   background: white;
   bottom: 20%;
-  left: 36%;
+  left: 37%;
   z-index: 3;
 }
 
 body.off .exclamation-mark .rectangle {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .exclamation-mark .dot {
@@ -1130,12 +1234,12 @@ body.off .exclamation-mark .rectangle {
   height: 15%;
   background: white;
   bottom: -1%;
-  left: 36%;
+  left: 37%;
   z-index: 3;
 }
 
 body.off .exclamation-mark .dot {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .period .dot {
@@ -1149,7 +1253,7 @@ body.off .exclamation-mark .dot {
 }
 
 body.off .period .dot {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .comma .dot {
@@ -1163,7 +1267,7 @@ body.off .period .dot {
 }
 
 body.off .comma .dot {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .semicolon .dot {
@@ -1177,7 +1281,7 @@ body.off .comma .dot {
 }
 
 body.off .semicolon .dot {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .semicolon .comma {
@@ -1191,7 +1295,7 @@ body.off .semicolon .dot {
 }
 
 body.off .semicolon .comma {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .quote .comma1 {
@@ -1205,7 +1309,7 @@ body.off .semicolon .comma {
 }
 
 body.off .quote .comma1 {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .quote .comma2 {
@@ -1219,7 +1323,7 @@ body.off .quote .comma1 {
 }
 
 body.off .quote .comma2 {
-  background: grey;
+  background: var(--main-bg-color);;
 }
 
 .dash .dash {
@@ -1233,5 +1337,5 @@ body.off .quote .comma2 {
 }
 
 body.off .dash .dash {
-  background: grey;
+  background: var(--main-bg-color);;
 }

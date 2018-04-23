@@ -1,0 +1,11 @@
+element.style {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+pre, xmp, plaintext, user agent stylesheet listing {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+}
