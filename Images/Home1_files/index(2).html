@@ -1,0 +1,118 @@
+
+<!-- saved from url=(0052)https://s0.2mdn.net/1782317/1522697010271/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="ad.size" content="width=300,height=600">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<link rel="stylesheet" href="./bundle(1).css">
+	<script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script></head>
+
+	<body>
+		<script>
+			var clickTag = "http://samsung.com/";
+		</script>
+		<div id="backup" onclick="window.open(window.clickTag)"></div>
+		<div id="ad_content" class="">
+
+			<div id="device" class="sprite-jpg device" style="visibility: hidden; opacity: 0;">
+
+				<div id="img1">
+
+					<div id="man_w">
+						<div id="man" class="sprite-png man" style="transform: matrix(1.1, 0, 0, 1.1, 0, 0);"></div>
+					</div>
+					<svg id="circ" width="190" height="195">
+						<path id="load" d="M93.47,1.5c50.89-.09,92.22,42.11,92.31,94.27s-41.08,94.51-92,94.61S1.6,148.26,1.5,96.11,42.58,1.59,93.47,1.5Z" fill="none" stroke="#30fffc" stroke-width="4" style="stroke-dashoffset: 0; stroke-dasharray: none; visibility: hidden; opacity: 0;"></path>
+					</svg>
+					<div id="arrow" class="sprite-jpg arrow"></div>
+					<div id="img1_ui" class="sprite-jpg img1-ui" style="visibility: hidden; opacity: 0;"></div>
+					<div id="next_over" class="sprite-png next_over" style="visibility: inherit; opacity: 1;"></div>
+				</div>
+				<div id="circ_load_w" class="invisible" style="visibility: inherit; opacity: 1;">
+					<div id="circ_load" class="sprite-svg circ_loading" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+				</div>
+				<div id="img2" class="sprite-jpg img2" style="visibility: inherit; opacity: 1;">
+					<div id="img2_ui" class="sprite-jpg img2-ui" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+				</div>
+			</div>
+
+			<h1 id="head1" class="txt" style="visibility: hidden; opacity: 0;">The emoji that’s<br>actually you.</h1>
+			<h1 id="head2" class="txt" style="visibility: hidden; opacity: 0;">Galaxy S9+ with<br>AR Emoji.</h1>
+			<h1 id="head_ef" class="txt" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">The Camera.<br>Reimagined.</h1>
+
+			<div id="ef_device_2" class="sprite-png ef-device-2" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+			<div id="ef_device_1" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+				<div id="petal1" class="sprite-png petal1" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+				<div id="petal2" class="sprite-png petal2" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+				<div id="petal3" class="sprite-png petal3" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+				<div id="petals"><div id="temp0" style="height: 10px; width: 10px; position: absolute; left: 788.156px; top: 35.038px; transform: scale(1.2338, 1.2338) rotate(888.585deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp1" style="height: 10px; width: 10px; position: absolute; left: 836.331px; top: -2.83768px; transform: scale(1.27037, 1.27037) rotate(1192.39deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp2" style="height: 10px; width: 10px; position: absolute; left: 610.541px; top: -70.5765px; transform: scale(1.1061, 1.1061) rotate(719.585deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp3" style="height: 10px; width: 10px; position: absolute; left: 771.395px; top: -72.0459px; transform: scale(0.860925, 0.860925) rotate(1153.17deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp4" style="height: 10px; width: 10px; position: absolute; left: 642.489px; top: -68.9256px; transform: scale(0.865012, 0.865012) rotate(36.522deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp5" style="height: 10px; width: 10px; position: absolute; left: 589.524px; top: -18.3614px; transform: scale(1.28689, 1.28689) rotate(875.088deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp6" style="height: 10px; width: 10px; position: absolute; left: 631.799px; top: -98.9432px; transform: scale(0.984539, 0.984539) rotate(615.998deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp7" style="height: 10px; width: 10px; position: absolute; left: 681.351px; top: -127.039px; transform: scale(0.943879, 0.943879) rotate(347.904deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp8" style="height: 10px; width: 10px; position: absolute; left: 724.965px; top: -142.203px; transform: scale(0.998859, 0.998859) rotate(60.0814deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp9" style="height: 10px; width: 10px; position: absolute; left: 792.033px; top: -114.943px; transform: scale(0.815084, 0.815084) rotate(405.997deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp10" style="height: 10px; width: 10px; position: absolute; left: 389.739px; top: -93.016px; transform: scale(1.25351, 1.25351) rotate(346.283deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp11" style="height: 10px; width: 10px; position: absolute; left: 429.532px; top: -73.0809px; transform: scale(1.29867, 1.29867) rotate(1180.61deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp12" style="height: 10px; width: 10px; position: absolute; left: 792.438px; top: -62.3467px; transform: scale(1.28238, 1.28238) rotate(239.259deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp13" style="height: 10px; width: 10px; position: absolute; left: 479.843px; top: -60.9595px; transform: scale(0.899074, 0.899074) rotate(91.1112deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp14" style="height: 10px; width: 10px; position: absolute; left: 784.666px; top: -8.25838px; transform: scale(1.13371, 1.13371) rotate(569.646deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp15" style="height: 10px; width: 10px; position: absolute; left: 827.045px; top: -9.14734px; transform: scale(1.16536, 1.16536) rotate(720.341deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp16" style="height: 10px; width: 10px; position: absolute; left: 767.946px; top: -91.9043px; transform: scale(0.914639, 0.914639) rotate(985.968deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp17" style="height: 10px; width: 10px; position: absolute; left: 760.579px; top: -24.765px; transform: scale(1.14209, 1.14209) rotate(684.854deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp18" style="height: 10px; width: 10px; position: absolute; left: 600.086px; top: -89.7329px; transform: scale(0.809809, 0.809809) rotate(57.0028deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp19" style="height: 10px; width: 10px; position: absolute; left: 653.279px; top: 2.90029px; transform: scale(1.12003, 1.12003) rotate(273.525deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp20" style="height: 10px; width: 10px; position: absolute; left: 430.123px; top: -60.2869px; transform: scale(0.853401, 0.853401) rotate(310.566deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp21" style="height: 10px; width: 10px; position: absolute; left: 769.922px; top: -65.2085px; transform: scale(1.13273, 1.13273) rotate(481.757deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp22" style="height: 10px; width: 10px; position: absolute; left: 542.452px; top: -78.3992px; transform: scale(0.854994, 0.854994) rotate(1193.94deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp23" style="height: 10px; width: 10px; position: absolute; left: 717.269px; top: -62.4111px; transform: scale(0.859572, 0.859572) rotate(352.368deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp24" style="height: 10px; width: 10px; position: absolute; left: 888.01px; top: -36.0435px; transform: scale(1.23257, 1.23257) rotate(1185.42deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp25" style="height: 10px; width: 10px; position: absolute; left: 655.069px; top: -34.117px; transform: scale(1.07498, 1.07498) rotate(724.363deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp26" style="height: 10px; width: 10px; position: absolute; left: 557.553px; top: -99.5653px; transform: scale(0.967613, 0.967613) rotate(894.211deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp27" style="height: 10px; width: 10px; position: absolute; left: 653.628px; top: -83.5933px; transform: scale(1.24504, 1.24504) rotate(413.927deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp28" style="height: 10px; width: 10px; position: absolute; left: 458.389px; top: -5.61087px; transform: scale(1.24693, 1.24693) rotate(177.861deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp29" style="height: 10px; width: 10px; position: absolute; left: 871.08px; top: 12.8196px; transform: scale(0.901805, 0.901805) rotate(103.067deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp30" style="height: 10px; width: 10px; position: absolute; left: 516.46px; top: -34.3212px; transform: scale(1.04817, 1.04817) rotate(252.553deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp31" style="height: 10px; width: 10px; position: absolute; left: 863.271px; top: -111.08px; transform: scale(0.833596, 0.833596) rotate(166.742deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp32" style="height: 10px; width: 10px; position: absolute; left: 589.246px; top: -7.65366px; transform: scale(0.97518, 0.97518) rotate(857.229deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp33" style="height: 10px; width: 10px; position: absolute; left: 617.844px; top: 50.9902px; transform: scale(1.12561, 1.12561) rotate(1134.87deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp34" style="height: 10px; width: 10px; position: absolute; left: 682.941px; top: -97.9122px; transform: scale(0.98968, 0.98968) rotate(502.789deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp35" style="height: 10px; width: 10px; position: absolute; left: 412.126px; top: -137.664px; transform: scale(1.19523, 1.19523) rotate(88.0146deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp36" style="height: 10px; width: 10px; position: absolute; left: 782.127px; top: -54.9305px; transform: scale(1.16689, 1.16689) rotate(899.953deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp37" style="height: 10px; width: 10px; position: absolute; left: 453.174px; top: -59.2039px; transform: scale(1.19781, 1.19781) rotate(882.921deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp38" style="height: 10px; width: 10px; position: absolute; left: 720.176px; top: -48.4034px; transform: scale(0.866579, 0.866579) rotate(786.135deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp39" style="height: 10px; width: 10px; position: absolute; left: 621.408px; top: -19.4779px; transform: scale(1.11535, 1.11535) rotate(616.877deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp40" style="height: 10px; width: 10px; position: absolute; left: 537.244px; top: -76.7925px; transform: scale(1.13473, 1.13473) rotate(306.495deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp41" style="height: 10px; width: 10px; position: absolute; left: 749.59px; top: 39.7758px; transform: scale(1.24716, 1.24716) rotate(659.467deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp42" style="height: 10px; width: 10px; position: absolute; left: 553.383px; top: -7.53723px; transform: scale(1.16684, 1.16684) rotate(508.276deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp43" style="height: 10px; width: 10px; position: absolute; left: 419.905px; top: -141.832px; transform: scale(1.03491, 1.03491) rotate(597.912deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp44" style="height: 10px; width: 10px; position: absolute; left: 578.812px; top: 2.75037px; transform: scale(1.13624, 1.13624) rotate(565.099deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp45" style="height: 10px; width: 10px; position: absolute; left: 662.446px; top: -30.8024px; transform: scale(1.10684, 1.10684) rotate(972.279deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp46" style="height: 10px; width: 10px; position: absolute; left: 719.919px; top: -47.3042px; transform: scale(0.914708, 0.914708) rotate(279.51deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp47" style="height: 10px; width: 10px; position: absolute; left: 505.184px; top: -1.76799px; transform: scale(0.934528, 0.934528) rotate(219.472deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp48" style="height: 10px; width: 10px; position: absolute; left: 837.887px; top: -20.0523px; transform: scale(1.04572, 1.04572) rotate(239.148deg);"><img width="20" height="20" src="./petal.png"></div><div id="temp49" style="height: 10px; width: 10px; position: absolute; left: 611.37px; top: -45.6587px; transform: scale(1.13589, 1.13589) rotate(998.564deg);"><img width="20" height="20" src="./petal.png"></div></div>
+				<div id="dandelion" class="sprite-png dandelion"></div>
+				<div class="sprite-png ef-device-1"></div>
+			</div>
+
+
+			<div id="cta" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+				<div id="cta_up" class="sprite-png cta-up" style="visibility: inherit; opacity: 1;"></div>
+				<div id="cta_over" class="sprite-png cta-over alpha-0" style="visibility: hidden; opacity: 0;"></div>
+			</div>
+			<div id="logo" class="sprite-svg logo" style="visibility: inherit; opacity: 1;"></div>
+			<div id="branding" class="sprite-svg branding"></div>
+		</div>
+		<!--[if !IE]><!-->
+			<script src="./TweenMax.min.js"></script>
+			<script src="./DrawSVGPlugin.min.js"></script>
+			<script src="./bundle(2).js"></script>
+		<!--<![endif]-->
+		<!--[if IE]><script>document.getElementById('backup').className = 'backup'; /*IE9 or below*/</script><![endif]-->
+	
+
+</body></html>

@@ -1,0 +1,99 @@
+
+<!-- saved from url=(0052)https://s0.2mdn.net/1782317/1522421631999/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="ad.size" content="width=970,height=250">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<link rel="stylesheet" href="./bundle.css">
+	<script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script></head>
+
+	<body>
+		<script>
+			var clickTag = "http://samsung.com/";
+		</script>
+		<div id="backup" onclick="window.open(window.clickTag)"></div>
+		<div id="ad_content" class="">
+
+			<div id="deviceWrapp">
+
+				<div id="bgw" class="sprite-jpg bgw" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+
+				<div id="device" class="sprite-png device" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+					<!-- <div id="dw1" class="sprite-png dw1 dw"></div>
+					<div id="dw2" class="sprite-png dw2 dw"></div>
+					<div id="dw3" class="sprite-png dw3 dw"></div> -->
+				</div>
+
+			</div>
+
+			<h1 id="head1" class="txt" style="visibility: hidden; opacity: 0;">The phone that withstands<br>splashes, spills, and rain.</h1>
+			<h1 id="head2" class="txt" style="visibility: inherit; opacity: 1;">Galaxy S9+ with<br>water resistance.</h1>
+
+
+			<div id="cta" style="visibility: inherit; opacity: 1;">
+				<div id="cta_up" class="sprite-png cta-up"></div>
+				<div id="cta_over" class="sprite-png cta-over alpha-0"></div>
+			</div>
+			<div id="logo" class="sprite-svg logo" style="visibility: hidden; opacity: 0;"></div>
+			<div id="branding" class="sprite-svg branding"></div>
+
+			<div id="legal" style="visibility: inherit; opacity: 1;">Water resistant in up to 5 feet of water for up to 30 minutes.<br>Rinse residue/dry after wet.</div>
+
+		</div>
+		<!--[if !IE]><!-->
+			<script src="./TweenMax.min.js"></script>
+			<script src="./bundle.js"></script>
+		<!--<![endif]-->
+		<!--[if IE]><script>document.getElementById('backup').className = 'backup'; /*IE9 or below*/</script><![endif]-->
+	
+
+</body></html>

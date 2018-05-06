@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Letter Page 1</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/letter1.css">
+    <link rel="stylesheet" href="../css/letter13.css">
+
+  </head>
+
+  <body>
+
+<div class="Title">
+
+  <div class="Name">
+
+    <div class="letter R">
+      <div class="letterbox">
+        <div class="rectangle"></div>
+        <div class="half-circle"></div>
+        <div class="rectangle2"></div>
+      </div>
+    </div>
+
+    <div class="letter R">
+      <div class="letterbox">
+        <div class="rectangle"></div>
+        <div class="half-circle"></div>
+        <div class="rectangle2"></div>
+      </div>
+    </div>
+
+    <div class="letter R">
+      <div class="letterbox">
+        <div class="rectangle"></div>
+        <div class="half-circle"></div>
+        <div class="rectangle2"></div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="Properties">
+
+  <div class="letter H">
+    <div class="letterbox">
+      <div class="rectangle-left"></div>
+      <div class="rectangle-right"></div>
+      <div class="rectangle-middle"></div>
+    </div>
+  </div>
+
+  <div class="letter O">
+    <div class="letterbox">
+      <div class="circle"></div>
+    </div>
+  </div>
+
+  <div class="letter M">
+    <div class="letterbox">
+      <div class="rectangle-long-left"></div>
+      <div class="rectangle-long-right"></div>
+      <div class="rectangle-short-left"></div>
+      <div class="rectangle-short-right"></div>
+    </div>
+  </div>
+
+<div class="letter E">
+  <div class="letterbox">
+    <div class="rectangle-top"></div>
+    <div class="rectangle-middle"></div>
+    <div class="rectangle-bottom"></div>
+    <div class="rectangle-back"></div>
+  </div>
+</div>
+
+<div class="letter S">
+  <div class="letterbox">
+    <div class="rectangle-top"></div>
+    <div class="rectangle-diagonal"></div>
+    <div class="rectangle-bottom"></div>
+    <div class="rectangle-left"></div>
+    <div class="rectangle-right"></div>
+  </div>
+</div>
+
+</div>
+
+<div class="Blog">
+
+  <div class="letter B">
+    <div class="letterbox">
+      <div class="halfcircle-one"></div>
+      <div class="halfcircle-two"></div>
+    </div>
+  </div>
+
+  <div class="letter L">
+    <div class="letterbox">
+      <div class="rectangle-long"></div>
+      <div class="rectangle-short"></div>
+    </div>
+  </div>
+
+  <div class="letter O">
+    <div class="letterbox">
+      <div class="circle"></div>
+    </div>
+  </div>
+
+  <div class="letter G">
+    <div class="letterbox">
+      <div class="halfcircle"></div>
+      <div class="halfcircle2"></div>
+      <div class="rectangle"></div>
+    </div>
+  </div>
+
+</div>
+
+<a href="letter14.html">
+  <div class="About">
+
+  <div class="letter A">
+    <div class="letterbox">
+      <div class="left-diagonal"></div>
+      <div class="right-diagonal"></div>
+      <div class="horizontal-one"></div>
+      <div class="square"></div>
+    </div>
+  </div>
+
+  <div class="letter B">
+    <div class="letterbox">
+      <div class="halfcircle-one"></div>
+      <div class="halfcircle-two"></div>
+    </div>
+  </div>
+
+  <div class="letter O">
+    <div class="letterbox">
+      <div class="circle"></div>
+    </div>
+  </div>
+
+  <div class="letter U">
+    <div class="letterbox">
+      <div class="half-circle1"></div>
+      <div class="half-circle2"></div>
+    </div>
+  </div>
+
+  <div class="letter T">
+    <div class="letterbox">
+      <div class="rectangle-top"></div>
+      <div class="rectangle-bottom"></div>
+    </div>
+  </div>
+</div>
+</a>
+
+<div class="largediv">
+  <div class="description">
+      <div class="About2">
+        <div class="letter A">
+          <div class="letterbox">
+            <div class="left-diagonal"></div>
+            <div class="right-diagonal"></div>
+            <div class="horizontal-one"></div>
+            <div class="square"></div>
+          </div>
+        </div>
+
+        <div class="letter B">
+          <div class="letterbox">
+            <div class="halfcircle-one"></div>
+            <div class="halfcircle-two"></div>
+          </div>
+        </div>
+
+        <div class="letter O">
+          <div class="letterbox">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="letter U">
+          <div class="letterbox">
+            <div class="half-circle1"></div>
+            <div class="half-circle2"></div>
+          </div>
+        </div>
+
+        <div class="letter T">
+          <div class="letterbox">
+            <div class="rectangle-top"></div>
+            <div class="rectangle-bottom"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="words">
+        <p>RRR Real Estate works to connect serious recyclers with their dream, a fully sustainable and recycle place to call home. Our homes are all old shipping containers that have been converted to beautiful homes, each decked out with the latest technology and gadgets. Each has been designed and built by a masterful team of designers, who are changing the way we look at shipping containers. If you're interested in a shipping container home, please contact us! </p>
+      </div>
+  </div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+
+  var status = 'on';
+
+  $('.letter').click(function(){
+    console.log('button clicked');
+    if(status == 'on'){
+      $('body').addClass('off');
+      status = 'off';
+    }
+    else {
+      $('body').removeClass('off');
+      status = 'on';
+    }
+});
+
+  </script>
+
+  </body>
+</html>

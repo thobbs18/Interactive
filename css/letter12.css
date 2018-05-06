@@ -1,0 +1,25 @@
+.Reduce {
+  display: block;
+  margin: auto;
+}
+
+.Reuse {
+  margin: auto;
+}
+
+.Recycle {
+  margin: auto;
+}
+
+.Estate {
+  margin: auto;
+  display: inline-block;
+}
+
+img {
+  position: absolute;
+  height: 25%;
+  width: 25%;
+  right: 5%;
+  top: 78%;
+}

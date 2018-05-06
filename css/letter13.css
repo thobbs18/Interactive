@@ -1,0 +1,61 @@
+:root {
+    --main-bg-color: grey;
+    --main-bg-color2: white;
+}
+
+.Title {
+  width: 100%;
+  height: 30%;
+}
+
+.Name {
+  position: absolute;
+  right: 0%;
+}
+
+.Properties {
+  position: absolute;
+  right: -10%;
+  top: 20%;
+  transform: scale(0.5);
+}
+
+.Blog {
+  position: absolute;
+  right: -7.25%;
+  top: 35%;
+  transform: scale(0.5);
+}
+
+.About {
+  position: absolute;
+  right: -10%;
+  top: 50%;
+  transform: scale(0.5);
+}
+
+.largediv{
+  position: absolute;
+  left: 5%;
+  width: 50%;
+  height: 80%;
+  border: 12px solid green;
+  background: grey;
+}
+
+.About2 {
+  width: 110%;
+  display: inline-block;
+  position: relative;
+  right: 25%;
+  top: 0%;
+  transform: scale(0.4);
+}
+
+p {
+  position: relative;
+  width: 80%;
+  font-size: 20px;
+  font: Titillium Web Light;
+  margin-left: 7%;
+}

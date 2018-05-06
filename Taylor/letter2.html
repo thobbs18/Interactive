@@ -2,31 +2,40 @@
 
 <html>
   <head>
-    <title>Letter1</title>
+    <title>RRR</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/letter1.css">
+    <link rel="stylesheet" href="letter2.css">
 
   </head>
 
   <body>
 
-    <input type="text" id="text-input" placeholder="Write your text here">
+  <div class="letters"></div>
+  <a href="letter1.html"><div class="letters" id="RRR">RRR</div></a>
+  <a href="Properties.html"><div class="letters" id="Properties">PROPERTIES</div></a>
+  <a href="Aboutpage.html"<div class="letters" id="About">ABOUT</div></a>
+  <a href="Contact.html"><div class="letters" id="Contact">CONTACT</div></a>
 
-    <div id="text-destination"></div>
+  <div class="rectangle-grey1"></div>
+  <div class="rectangle-grey2"></div>
+  <div class="rectangle-grey3"></div>
+  <div class="rectangle-grey4"></div>
+  <div class="rectangle-grey5"></div>
 
-  <div class="letter-definition" data-character=" ">
-      <div class="space"></div>
-  </div>
+
+<div class="letter-definition" data-character=" ">
+    <div class="space"></div>
+</div>
 
 <div class="letter-definition" data-character="A">
-    <div class="letter A">
-      <div class="letterbox">
-        <div class="left-diagonal"></div>
-        <div class="right-diagonal"></div>
-        <div class="horizontal-one"></div>
-        <div class="triangle"></div>
-      </div>
+  <div class="letter A">
+    <div class="letterbox">
+      <div class="left-diagonal"></div>
+      <div class="right-diagonal"></div>
+      <div class="horizontal-one"></div>
+      <div class="triangle"></div>
     </div>
+  </div>
 </div>
 
 <div class="letter-definition" data-character="B">
@@ -415,14 +424,14 @@
     </div>
 </div>
 
-<div class="letter-definition" data-character='"'>
+<!-- <div class="letter-definition" data-character="">
     <div class="letter quote">
       <div class="letterbox">
         <div class="comma1"></div>
         <div class="comma2"></div>
       </div>
     </div>
-</div>
+</div> -->
 
 <div class="letter-definition" data-character="-">
     <div class="letter dash">
@@ -432,63 +441,8 @@
     </div>
 </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-
-
-  var status = 'on';
-
-  $('.letter').click(function(){
-    console.log('button clicked');
-    if(status == 'on'){
-      $('body').addClass('off');
-      status = 'off';
-    }
-    else {
-      $('body').removeClass('off');
-      status = 'on';
-    }
-
-  });
-  $(function() {
-  var $input = $('#text-input');
-  var $destination = $('#text-destination');
-  var space = getHTMLForCharacter(' ');
-
-  function getHTMLForCharacter(character) {
-    var characterDefinition = $('.letter-definition[data-character="' + character + '"]').html();
-    var characterHTML = '<div class="letter" data-character="' + character + '">' + characterDefinition + '</div>';
-
-    if ( characterDefinition != undefined ) {
-      return characterHTML;
-    }
-  }
-
-  function writeText() {
-    var wordArray = [];
-    var words = $input.val().split(' ');
-
-    for (var i = 0; i < words.length; i++) {
-      var word = words[i];
-      var letters = word.split('');
-      var letterElements = letters.map(getHTMLForCharacter);
-      wordArray.push(
-        '<div class="word">' +
-        letterElements.join('') +
-        '</div>'
-      );
-    }
-
-    $destination.html( wordArray.join(space) );
-  }
-
-  $input.on('keyup', function() {
-    writeText();
-  });
-});
-
-
-  </script>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="letters.js"></script>
 
   </body>
 </html>

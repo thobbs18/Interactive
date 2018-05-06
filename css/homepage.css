@@ -1,14 +1,19 @@
-h1 {
-  
-}
-
 body {
-  background-color: white;
+  background-color: var(--main-bg-color2);
 }
 
 :root {
-    --main-bg-color: black;
+    --main-bg-color: grey;
+    --main-bg-color2: white;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Letters */
 
 .letter-definition {
 	display: none;
@@ -30,7 +35,7 @@ body {
   height: 200px;
   position: relative;
   margin-right: 3em;
-  margin-bottom: 5em;
+  margin-bottom: 4em;
 }
 
 .letterbox {
@@ -48,118 +53,118 @@ body.off .letterbox {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
+  background: var(--main-bg-color2);
 }
 
-.a .left-diagonal {
+.A .left-diagonal {
   position: absolute;
   width: 110%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(-80deg);
   margin-left: -22%;
 }
 
-body.off .a .left-diagonal {
+body.off .A .left-diagonal {
   background: var(--main-bg-color);;
 }
 
-.a .left-diagonal {
+.A .left-diagonal {
   position: absolute;
   width: 110%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(-80deg);
   margin-left: -22%;
 }
 
-body.off .a .left-diagonal {
+body.off .A .left-diagonal {
   background: var(--main-bg-color);;
 }
 
-.a .right-diagonal {
+.A .right-diagonal {
   position: absolute;
   width: 110%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(80deg);
   margin-left: 22%;
 }
 
-body.off .a .right-diagonal {
+body.off .A .right-diagonal {
   background: var(--main-bg-color);;
 }
 
-.a .horizontal-one , .h .rectangle-middle {
+.A .horizontal-one , .H .rectangle-middle {
   position: absolute;
   width: 85%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
 }
 
-body.off .a .horizontal-one , body.off .h .rectangle-middle {
+body.off .A .horizontal-one , body.off .H .rectangle-middle {
   background: var(--main-bg-color);;
 }
 
-.a .triangle {
+.A .triangle {
   width: 40%;
   height: 40%;
-  border-bottom: 100px solid white;
+  border-bottom: 100px solid var(--main-bg-color2);
   left: 31%;
   bottom: 55%;
   position: absolute;
 }
 
-body.off .a .triangle {
+body.off .A .triangle {
   border-bottom: 100px solid var(--main-bg-color);;
 }
 
-.b .halfcircle-one {
+.B .halfcircle-one {
   position: absolute;
   height: 80%;
   width: 55%;
   border-radius: 50% 50% 0 0;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(90deg);
   left: 25%;
   bottom: -14%;
 }
 
-body.off .b .halfcircle-one {
+body.off .B .halfcircle-one {
   background: var(--main-bg-color);;
 }
 
-.b .halfcircle-two {
+.B .halfcircle-two {
   position: absolute;
   height: 80%;
   width: 55%;
   border-radius: 50% 50% 0 0;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(90deg);
   left: 25%;
   bottom: 37%;
 }
 
-body.off .b .halfcircle-two {
+body.off .B .halfcircle-two {
   background: var(--main-bg-color);;
 }
 
-.c .halfcircle , .g .halfcircle {
+.C .halfcircle , .G .halfcircle {
   position: absolute;
   height: 82%;
   width: 110%;
   border-radius: 50% 50% 0 0;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(-90deg);
   margin-left: -2%;
   margin-bottom: 0;
 }
 
-body.off .c .halfcircle , body.off .g .halfcircle {
+body.off .C .halfcircle , body.off .G .halfcircle {
   background: var(--main-bg-color);;
 }
 
-.c .halfcircle2 , .g .halfcircle2 {
+.C .halfcircle2 , .G .halfcircle2 {
   position: absolute;
   height: 60%;
   width: 60%;
@@ -171,146 +176,146 @@ body.off .c .halfcircle , body.off .g .halfcircle {
   z-index: 2;
 }
 
-body.off .c .halfcircle2 , body.off .g .halfcircle2 {
-  background: white;
+body.off .C .halfcircle2 , body.off .G .halfcircle2 {
+  background: var(--main-bg-color2);
 }
 
-.d .halfcircle {
+.D .halfcircle {
   position: absolute;
   height: 80%;
   width: 105%;
   border-radius: 50% 50% 0 0;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(90deg);
   left: -3%;
   bottom: 12%;
 }
 
-body.off .d .halfcircle {
+body.off .D .halfcircle {
   background: var(--main-bg-color);;
 }
 
-.e .rectangle-top , .f .rectangle-top , .i .rectangle-top {
+.E .rectangle-top , .F .rectangle-top , .I .rectangle-top {
   position: absolute;
   width: 82%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 75%;
 }
 
-body.off .e .rectangle-top , body.off .f .rectangle-top , body.off .i .rectangle-top {
+body.off .D .rectangle-top , body.off .F .rectangle-top , body.off .I .rectangle-top {
   background: var(--main-bg-color);;
 }
 
-.e .rectangle-middle , .f .rectangle-middle {
+.E .rectangle-middle , .F .rectangle-middle {
   position: absolute;
   width: 75%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 35%;
 }
 
-body.off .e .rectangle-middle , body.off .f .rectangle-middle {
+body.off .E .rectangle-middle , body.off .F .rectangle-middle {
   background: var(--main-bg-color);;
 }
 
-.e .rectangle-bottom , .i .rectangle-bottom {
+.E .rectangle-bottom , .I .rectangle-bottom {
   position: absolute;
   width: 82%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -5%;
 }
 
-body.off .e .rectangle-bottom , body.off .i .rectangle-bottom {
+body.off .E .rectangle-bottom , body.off .I .rectangle-bottom {
   background: var(--main-bg-color);;
 }
 
-.e .rectangle-back , .f .rectangle-back {
+.E .rectangle-back , .F .rectangle-back {
   position: absolute;
   width: 30%;
   height: 105%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -5%;
   left: 20%;
 }
 
-body.off .e .rectangle-back , body.off .f .rectangle-back {
+body.off .E .rectangle-back , body.off .F .rectangle-back {
   background: var(--main-bg-color);;
 }
 
-.g .rectangle {
+.G .rectangle {
   position: absolute;
   width: 25%;
   height: 60%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -5%;
   left: 65%;
   z-index: 3;
 }
 
-body.off .g .rectangle {
+body.off .G .rectangle {
   background: var(--main-bg-color);;
 }
 
-.h .rectangle-left {
+.H .rectangle-left {
   position: absolute;
   width: 25%;
   height: 105%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -5%;
   left: 15%;
   z-index: 3;
 }
 
-body.off .h .rectangle-left {
+body.off .H .rectangle-left {
   background: var(--main-bg-color);;
 }
 
-.h .rectangle-right {
+.H .rectangle-right {
   position: absolute;
   width: 25%;
   height: 105%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -5%;
   right: 15%;
   z-index: 3;
 }
 
-body.off .h .rectangle-right {
+body.off .H .rectangle-right {
   background: var(--main-bg-color);;
 }
 
-.i .rectangle-long {
+.I .rectangle-long {
   position: absolute;
   width: 25%;
   height: 105%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -5%;
   left: 38%;
   z-index: 3;
 }
 
-body.off .i .rectangle-long {
+body.off .I .rectangle-long {
   background: var(--main-bg-color);;
 }
 
-.j .halfcircle {
+.J .halfcircle {
   position: absolute;
   height: 54%;
   width: 86.75%;
   border-radius: 50% 50% 0 0;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(180deg);
   left: 7%;
   bottom: -4%;
 }
 
-body.off .j .halfcircle {
+body.off .J .halfcircle {
   background: var(--main-bg-color);;
 }
 
-.j .halfcircle2 {
+.J .halfcircle2 {
   position: absolute;
   height: 35%;
   width: 41%;
@@ -322,369 +327,368 @@ body.off .j .halfcircle {
   z-index: 2;
 }
 
-body.off .j .halfcircle2 {
-  background: white;
+body.off .J .halfcircle2 {
+  background: var(--main-bg-color2);
 }
 
-.j .rectangle1 {
+.J .rectangle1 {
   position: absolute;
   width: 23.5%;
   height: 60%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 25%;
   left: 70.5%;
   z-index: 3;
 }
 
-body.off .j .rectangle1 {
+body.off .J .rectangle1 {
   background: var(--main-bg-color);;
 }
 
-.j .rectangle2 {
+.J .rectangle2 {
   position: absolute;
   width: 86%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 75%;
   left: 8%;
   z-index: 3;
 }
 
-body.off .j .rectangle2 {
+body.off .J .rectangle2 {
   background: var(--main-bg-color);;
 }
 
-.k .rectangle-long , .p .rectangle {
+.K .rectangle-long , .P .rectangle {
   position: absolute;
   width: 30%;
   height: 110%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -5%;
   left: 19%;
   z-index: 3;
 }
 
-body.off .k .rectangle-long , body.off .p .rectangle {
+body.off .K .rectangle-long , body.off .P .rectangle {
   background: var(--main-bg-color);;
 }
 
-.k .diagonal-top {
+.K .diagonal-top {
   position: absolute;
   width: 111%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(-30deg);
   margin-left: 6%;
   bottom: 54%;
 }
 
-body.off .k .diagonal-top {
+body.off .K .diagonal-top {
   background: var(--main-bg-color);;
 }
 
-.k .diagonal-bottom {
+.K .diagonal-bottom {
   position: absolute;
   width: 96%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(40deg);
   margin-left: 18%;
   bottom: 19%;
 }
 
-body.off .k .diagonal-bottom {
+body.off .K .diagonal-bottom {
   background: var(--main-bg-color);;
 }
 
-.l .rectangle-long {
+.L .rectangle-long {
   position: absolute;
   width: 25%;
   height: 105%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 0%;
   left: 20%;
   z-index: 3;
 }
 
-body.off .l .rectangle-long {
+body.off .L .rectangle-long {
   background: var(--main-bg-color);;
 }
 
-.l .rectangle-short {
+.L .rectangle-short {
   position: absolute;
   width: 82%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 0%;
 }
 
-body.off .l .rectangle-short {
+body.off .L .rectangle-short {
   background: var(--main-bg-color);;
 }
 
-.m .rectangle-long-left , .n .rectangle-long-left , .w .rectangle-long-left{
+.M .rectangle-long-left , .N .rectangle-long-left , .W .rectangle-long-left{
   position: absolute;
   width: 25%;
   height: 105%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -5%;
   left: 8%;
   z-index: 3;
 }
 
-body.off .m .rectangle-long-left , body.off .n .rectangle-long-left , body.off .w .rectangle-long-left{
+body.off .M .rectangle-long-left , body.off .N .rectangle-long-left , body.off .W .rectangle-long-left{
   background: var(--main-bg-color);;
 }
 
-.m .rectangle-long-right , .n .rectangle-long-right , .w .rectangle-long-right{
+.M .rectangle-long-right , .N .rectangle-long-right , .W .rectangle-long-right{
   position: absolute;
   width: 25%;
   height: 105%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -5%;
   left: 67%;
   z-index: 3;
 }
 
-body.off .m .rectangle-long-right , body.off .n .rectangle-long-right , body.off .w .rectangle-long-right{
+body.off .M .rectangle-long-right , body.off .N .rectangle-long-right , body.off .W .rectangle-long-right{
   background: var(--main-bg-color);;
 }
 
-
-.m .rectangle-short-left {
+.M .rectangle-short-left {
   position: absolute;
   width: 31%;
   height: 28%;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(45deg);
   margin-left: -16%;
   bottom: 65%;
 }
 
-body.off .m .rectangle-short-left {
+body.off .M .rectangle-short-left {
   background: var(--main-bg-color);;
 }
 
-.m .rectangle-short-right {
+.M .rectangle-short-right {
   position: absolute;
   width: 55%;
   height: 28%;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(-45deg);
   margin-left: 9%;
   bottom: 57.5%;
 }
 
-body.off .m .rectangle-short-right {
+body.off .M .rectangle-short-right {
   background: var(--main-bg-color);;
 }
 
-.n .diagonal {
+.N .diagonal {
   position: absolute;
   width: 108%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(60deg);
   left: -4%;
   bottom: 35%;
 }
 
-body.off .n .diagonal {
+body.off .N .diagonal {
   background: var(--main-bg-color);;
 }
 
-.o .circle , .q .circle {
+.O .circle , .Q .circle {
   position: absolute;
   left: 6%;
   bottom: -3%;
-  background: white;
+  background: var(--main-bg-color2);
   height: 106%;
   width: 87%;
   border-radius: 50%;
   }
 
-body.off .o .circle , body.off .q .circle {
+body.off .O .circle , body.off .Q .circle {
     background: var(--main-bg-color);;
     }
 
-.p .half-circle , .r .half-circle {
+.P .half-circle , .R .half-circle {
   position: absolute;
   height: 70%;
   width: 71%;
   border-radius: 50% 50% 0 0;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(90deg);
   left: 23%;
   bottom: 34%;
 }
 
-body.off .p .half-circle , body.off .r .half-circle {
+body.off .P .half-circle , body.off .R .half-circle {
   background: var(--main-bg-color);;
 }
 
-.p .rectangle-small {
+.P .rectangle-small {
   position: absolute;
   height: 25%;
   width: 25%;
   left: 9%;
   bottom: 34%;
-  background: white;
+  background: var(--main-bg-color2);
 }
 
-body.off .p .rectangle-small {
+body.off .P .rectangle-small {
   background: var(--main-bg-color);;
 }
 
-.q .rectangle {
+.Q .rectangle {
   position: absolute;
   height: 25%;
   width: 35%;
   right: -10%;
   bottom: 0%;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(45deg);
 }
 
-body.off .q .rectangle {
+body.off .Q .rectangle {
   background: var(--main-bg-color);;
 }
 
-.r .rectangle {
+.R .rectangle {
   position: absolute;
   width: 30%;
   height: 110%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -5%;
   left: 10%;
   z-index: 3;
 }
 
-body.off .r .rectangle {
+body.off .R .rectangle {
   background: var(--main-bg-color);;
 }
 
-.r .rectangle2 {
+.R .rectangle2 {
   position: absolute;
   height: 25%;
   width: 70%;
   right: -3%;
   bottom: 6%;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(45deg);
 }
 
-body.off .r .rectangle2 {
+body.off .R .rectangle2 {
   background: var(--main-bg-color);;
 }
 
-.s .rectangle-top {
+.S .rectangle-top {
   position: absolute;
   width: 85%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 75%;
   left: 7%;
 }
 
-body.off .s .rectangle-top {
+body.off .S .rectangle-top {
   background: var(--main-bg-color);;
 }
 
-.s .rectangle-diagonal {
+.S .rectangle-diagonal {
   position: absolute;
   width: 23%;
   height: 102%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -1%;
   left: 36%;
   transform: rotate(-38deg);
     }
 
-body.off .s .rectangle-diagonal {
+body.off .S .rectangle-diagonal {
   background: var(--main-bg-color);;
 }
 
-.s .rectangle-bottom {
+.S .rectangle-bottom {
   position: absolute;
   width: 85%;
   height: 20%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 0%;
   left: 8%;
 }
 
-body.off .s .rectangle-bottom {
+body.off .S .rectangle-bottom {
   background: var(--main-bg-color);;
 }
 
-.s .rectangle-left{
+.S .rectangle-left{
   position: absolute;
   width: 25%;
   height: 20%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 15%;
   left: 8%;
 }
 
-body.off .s .rectangle-left{
+body.off .S .rectangle-left{
   background: var(--main-bg-color);;
 }
 
-.s .rectangle-right {
+.S .rectangle-right {
   position: absolute;
   width: 25%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 60%;
   left: 67%;
 }
 
-body.off .s .rectangle-right {
+body.off .S .rectangle-right {
   background: var(--main-bg-color);;
 }
 
-.t .rectangle-top , .z .rectangle-top {
+.T .rectangle-top , .Z .rectangle-top {
   position: absolute;
   width: 85%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 75%;
   left: 7%;
 }
 
-body.off .t .rectangle-top , body.off .z .rectangle-top {
+body.off .T .rectangle-top , body.off .Z .rectangle-top {
   background: var(--main-bg-color);;
 }
 
-.t .rectangle-bottom {
+.T .rectangle-bottom {
   position: absolute;
   width: 25%;
   height: 100%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -1%;
   left: 39%;
 }
 
-body.off .t .rectangle-bottom {
+body.off .T .rectangle-bottom {
   background: var(--main-bg-color);;
 }
 
-.u .half-circle1 {
+.U .half-circle1 {
   position: absolute;
   height: 110%;
   width: 80%;
   border-radius: 50% 50% 0 0;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(180deg);
   left: 10%;
   bottom: -10%;
 }
 
-body.off .u .half-circle1 {
+body.off .U .half-circle1 {
   background: var(--main-bg-color);;
 }
 
-.u .half-circle2 {
+.U .half-circle2 {
   position: absolute;
   height: 80%;
   width: 30%;
@@ -696,175 +700,175 @@ body.off .u .half-circle1 {
   z-index: 2;
 }
 
-body.off .u .half-circle2 {
-  background: white;
+body.off .U .half-circle2 {
+  background: var(--main-bg-color2);
 }
 
-.v .rectangle-left {
+.V .rectangle-left {
   position: absolute;
   width: 23%;
   height: 112%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -4%;
   left: 61%;
   transform: rotate(25deg);
 }
 
-body.off .v .rectangle-left {
+body.off .V .rectangle-left {
   background: var(--main-bg-color);;
 }
 
-.v .rectangle-right {
+.V .rectangle-right {
   position: absolute;
   width: 23%;
   height: 112%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -4%;
   left: 15%;
   transform: rotate(-25deg);
 }
 
-body.off .v .rectangle-right {
+body.off .V .rectangle-right {
   background: var(--main-bg-color);;
 }
 
-.v .square{
+.V .square{
   position: absolute;
   width: 18%;
   height: 15%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -3%;
   left: 39.5%;
   z-index: 3;
 }
 
-body.off .v .square{
+body.off .V .square{
   background: var(--main-bg-color);;
 }
 
-.w .rectangle-short-left {
+.W .rectangle-short-left {
   position: absolute;
   width: 31%;
   height: 28%;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(-45deg);
   margin-left: -16%;
   bottom: 2%;
 }
 
-body.off .w .rectangle-short-left {
+body.off .W .rectangle-short-left {
   background: var(--main-bg-color);;
 }
 
-.w .rectangle-short-right {
+.W .rectangle-short-right {
   position: absolute;
   width: 55%;
   height: 28%;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(45deg);
   margin-left: 9%;
   bottom: 10.5%;
 }
 
-body.off .w .rectangle-short-right {
+body.off .W .rectangle-short-right {
   background: var(--main-bg-color);;
 }
 
-.x .rectangle-left {
+.X .rectangle-left {
   position: absolute;
   width: 23%;
   height: 142%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -22%;
   left: 37%;
   transform: rotate(-45deg);
 }
 
-body.off .x .rectangle-left {
+body.off .X .rectangle-left {
   background: var(--main-bg-color);;
 }
 
-.x .rectangle-right {
+.X .rectangle-right {
   position: absolute;
   width: 23%;
   height: 142%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -22%;
   left: 39%;
   transform: rotate(45deg);
 }
 
-body.off .x .rectangle-right {
+body.off .X .rectangle-right {
   background: var(--main-bg-color);;
 }
 
-.y .rectangle-left {
+.Y .rectangle-left {
   position: absolute;
   width: 23%;
   height: 80%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 32%;
   left: 17%;
   transform: rotate(-45deg);
 }
 
-body.off .y .rectangle-left {
+body.off .Y .rectangle-left {
   background: var(--main-bg-color);;
 }
 
-.y .rectangle-right {
+.Y .rectangle-right {
   position: absolute;
   width: 23%;
   height: 80%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 31%;
   left: 61%;
   transform: rotate(45deg);
 }
 
-body.off .y .rectangle-right {
+body.off .Y .rectangle-right {
   background: var(--main-bg-color);;
 }
 
-.y .rectangle {
+.Y .rectangle {
   position: absolute;
   width: 23%;
   height: 65%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 0%;
   left: 39%;
 }
 
-body.off .y .rectangle {
+body.off .Y .rectangle {
   background: var(--main-bg-color);;
 }
 
 
-.z .diagonal {
+.Z .diagonal {
   position: absolute;
   width: 23%;
   height: 102%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -1%;
   left: 40%;
   transform: rotate(38deg);
 
 }
 
-body.off .z .diagonal {
+body.off .Z .diagonal {
   background: var(--main-bg-color);;
 }
 
-.z .rectangle-bottom {
+.Z .rectangle-bottom {
   position: absolute;
   width: 85%;
   height: 20%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 0%;
   left: 8%;
 }
 
-body.off .z .rectangle-bottom {
+body.off .Z .rectangle-bottom {
   background: var(--main-bg-color);;
 }
 
@@ -872,7 +876,7 @@ body.off .z .rectangle-bottom {
   position: absolute;
   left: 13%;
   bottom: -3%;
-  background: white;
+  background: var(--main-bg-color2);
   height: 106%;
   width: 75%;
   border-radius: 50%;
@@ -886,7 +890,7 @@ body.off .zero .circle {
   position: absolute;
   width: 25%;
   height: 105%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -5%;
   left: 37%;
   z-index: 3;
@@ -901,7 +905,7 @@ body.off .one .line {
   height: 82%;
   width: 60%;
   border-radius: 50% 50% 0 0;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(90deg);
   left: 20%;
   bottom: 30%;
@@ -924,14 +928,14 @@ body.off .two .circle1 , body.off .three .circle1 , body.off .question-mark .cir
 }
 
 body.off .two .circle2 , body.off .three .circle2 , body.off .question-mark .circle2{
-  background: white;
+  background: var(--main-bg-color2);
 }
 
 .two .line1 {
   position: absolute;
   width: 25%;
   height: 60%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -1%;
   left: 20%;
   z-index: 3;
@@ -945,7 +949,7 @@ body.off .two .line1 {
   position: absolute;
   width: 80%;
   height: 23%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -1%;
   left: 9%;
   z-index: 3;
@@ -960,7 +964,7 @@ body.off .two .line2 {
   height: 82%;
   width: 60%;
   border-radius: 50% 50% 0 0;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(90deg);
   left: 20%;
   bottom: -13%;
@@ -983,7 +987,7 @@ body.off .three .circle3 {
 }
 
 body.off .three .circle4 {
-  background: white;
+  background: var(--main-bg-color2);
 }
 
 .three .rectangle {
@@ -997,14 +1001,14 @@ body.off .three .circle4 {
 }
 
 body.off .three .rectangle {
-  background: white;
+  background: var(--main-bg-color2);
 }
 
 .four .rectangle-short-left {
   position: absolute;
   width: 25%;
   height: 50%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 51%;
   left: 10%;
   z-index: 3;
@@ -1018,7 +1022,7 @@ body.off .four .rectangle-short-left {
   position: absolute;
   width: 25%;
   height: 102%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -2%;
   left: 55%;
   z-index: 3;
@@ -1032,7 +1036,7 @@ body.off .four .rectangle-long-right {
   position: absolute;
   width: 80%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 39%;
   left: 10%;
   z-index: 3;
@@ -1047,7 +1051,7 @@ body.off .four .rectangle-middle {
   height: 82%;
   width: 60%;
   border-radius: 50% 50% 0 0;
-  background: white;
+  background: var(--main-bg-color2);
   transform: rotate(90deg);
   left: 20%;
   bottom: -13%;
@@ -1070,14 +1074,14 @@ body.off .five .circle1{
 }
 
 body.off .five .circle2 {
-  background: white;
+  background: var(--main-bg-color2);
 }
 
 .five .rectangle1 {
   position: absolute;
   width: 25%;
   height: 61%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 39%;
   left: 20%;
   z-index: 3;
@@ -1091,7 +1095,7 @@ body.off .five .rectangle1 {
   position: absolute;
   width: 80%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 77%;
   left: 9%;
   z-index: 3;
@@ -1105,7 +1109,7 @@ body.off .five .rectangle2 {
   position: absolute;
   width: 25%;
   height: 75%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 26%;
   left: 8%;
   z-index: 3;
@@ -1119,7 +1123,7 @@ body.off .six .rectangle {
   position: absolute;
   width: 85%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 75%;
   left: 7%;
   z-index: 3;
@@ -1133,7 +1137,7 @@ body.off .seven .rectangle-top {
   position: absolute;
   width: 25%;
   height: 100%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -1%;
   left: 67%;
   z-index: 3;
@@ -1147,7 +1151,7 @@ body.off .seven .rectangle-diagonal , body.off .nine .rectangle{
   position: absolute;
   width: 85%;
   height: 65%;
-  background: white;
+  background: var(--main-bg-color2);
   border-radius: 50%;
   left: 8%;
   bottom: -3%;
@@ -1162,7 +1166,7 @@ body.off .eight .circle1 , body.off .six .circle1{
   position: absolute;
   width: 85%;
   height: 65%;
-  background: white;
+  background: var(--main-bg-color2);
   border-radius: 50%;
   left: 8%;
   bottom: 37%;
@@ -1176,7 +1180,7 @@ body.off .eight .circle3 , body.off .nine .circle1 {
   position: absolute;
   width: 25%;
   height: 75%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -1%;
   left: 68%;
   z-index: 3;
@@ -1190,7 +1194,7 @@ body.off .nine .rectangle{
   position: absolute;
   width: 25%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 19%;
   left: 19.5%;
   z-index: 3;
@@ -1204,7 +1208,7 @@ body.off .question-mark .rectangle{
   position: absolute;
   width: 25%;
   height: 15%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -1%;
   left: 19.5%;
   z-index: 3;
@@ -1218,7 +1222,7 @@ body.off .question-mark .dot {
   position: absolute;
   width: 25%;
   height: 80%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 20%;
   left: 37%;
   z-index: 3;
@@ -1232,7 +1236,7 @@ body.off .exclamation-mark .rectangle {
   position: absolute;
   width: 25%;
   height: 15%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: -1%;
   left: 37%;
   z-index: 3;
@@ -1246,7 +1250,7 @@ body.off .exclamation-mark .dot {
   position: absolute;
   width: 25%;
   height: 15%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 36%;
   left: 36%;
   z-index: 3;
@@ -1260,7 +1264,7 @@ body.off .period .dot {
   position: absolute;
   width: 25%;
   height: 30%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 21%;
   left: 36%;
   z-index: 3;
@@ -1274,7 +1278,7 @@ body.off .comma .dot {
   position: absolute;
   width: 25%;
   height: 15%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 57%;
   left: 36%;
   z-index: 3;
@@ -1288,7 +1292,7 @@ body.off .semicolon .dot {
   position: absolute;
   width: 25%;
   height: 30%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 21%;
   left: 36%;
   z-index: 3;
@@ -1302,7 +1306,7 @@ body.off .semicolon .comma {
   position: absolute;
   width: 25%;
   height: 30%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 40%;
   left: 20%;
   z-index: 3;
@@ -1316,7 +1320,7 @@ body.off .quote .comma1 {
   position: absolute;
   width: 25%;
   height: 30%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 40%;
   left: 52%;
   z-index: 3;
@@ -1330,7 +1334,7 @@ body.off .quote .comma2 {
   position: absolute;
   width: 50%;
   height: 25%;
-  background: white;
+  background: var(--main-bg-color2);
   bottom: 36%;
   left: 25%;
   z-index: 3;
